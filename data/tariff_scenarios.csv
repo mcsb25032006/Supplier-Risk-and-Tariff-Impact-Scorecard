@@ -1,0 +1,6 @@
+Scenario_Name,Adjustment_Type,Adjustment_Value,Description
+Current (Jul 2026),Additive,0.0,"Baseline tariff rates: China ~35%, Mexico ~0%, US 0%"
++10% escalation,Additive,0.1,Moderate trade tension escalation (+10% tariff on offshore/nearshore non-US origins)
++25% escalation,Additive,0.25,Aggressive trade penalty increase (+25% across foreign sourcing)
+Section 122 sunset (China -10pt),Additive,-0.1,Statutory sunset of Section 122 surcharge on China (-10% effective)
+Universal 50% (worst case),Absolute,0.5,Universal blanket tariff rate of 50% on all foreign imports

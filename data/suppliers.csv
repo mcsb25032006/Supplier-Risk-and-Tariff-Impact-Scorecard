@@ -1,0 +1,4 @@
+Supplier_ID,Supplier_Name,Country,Region,City,Primary_Category,Onboarded_Date,USMCA_Qualifying
+SUP-001,TitanForge Components,United States,Domestic,"Columbus, OH",GPU Servers,2023-03-14,N/A
+SUP-002,Bajio Precision Systems,Mexico,Nearshore,"Queretaro, MX",Network Switches,2024-01-22,Y
+SUP-003,Zhongxin Compute Manufacturing,China,Offshore,"Shenzhen, CN",PDU / MEP Equipment,2022-09-01,N/A

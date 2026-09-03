@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1232 480" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1232" height="480" fill="#0F1F3D"/>
+<text x="616.0" y="46" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">Supplier Risk &amp; Tariff-Impact Scorecard</text>
+<text x="616.0" y="72" font-size="14" fill="#AEB9D4" text-anchor="middle">3 suppliers &#8226; 340 purchase orders &#8226; July 2026 tariff conditions</text>
+<line x1="40" y1="88" x2="1192" y2="88" stroke="#2A3A5C" stroke-width="1"/>
+<rect x="40" y="110" width="360" height="300" rx="14" fill="#FFFFFF"/>
+<rect x="40" y="110" width="360" height="8" rx="4" fill="#2E7D32"/>
+<rect x="40" y="114" width="360" height="4" fill="#2E7D32"/>
+<text x="68" y="150" font-size="17" font-weight="700" fill="#0F1F3D" text-anchor="start">TitanForge Components</text>
+<text x="68" y="170" font-size="12.5" fill="#6B7280" text-anchor="start">United States • Domestic</text>
+<rect x="68" y="186" width="74" height="26" rx="13" fill="#EAF6EC" stroke="#2E7D32" stroke-width="1.5"/>
+<text x="105.0" y="203.5" font-size="12" font-weight="700" fill="#2E7D32" text-anchor="middle">Green</text>
+<line x1="68" y1="230" x2="372" y2="230" stroke="#EEF0F4" stroke-width="1"/>
+<text x="68" y="280" font-size="46" font-weight="800" fill="#2E7D32" text-anchor="start">11.9</text>
+<text x="68" y="300" font-size="11.5" fill="#6B7280" text-anchor="start">COMPOSITE RISK SCORE (0=best, 100=worst)</text>
+<text x="68" y="334" font-size="12.5" fill="#374151" text-anchor="start">On-Time Delivery</text>
+<text x="372" y="334" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">84.2%</text>
+<text x="68" y="360" font-size="12.5" fill="#374151" text-anchor="start">Avg. Lead Time</text>
+<text x="372" y="360" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">12.5 days (±5.8)</text>
+<text x="68" y="386" font-size="12.5" fill="#374151" text-anchor="start">Tariff Exposure</text>
+<text x="372" y="386" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">0.0%</text>
+<rect x="436" y="110" width="360" height="300" rx="14" fill="#FFFFFF"/>
+<rect x="436" y="110" width="360" height="8" rx="4" fill="#2E7D32"/>
+<rect x="436" y="114" width="360" height="4" fill="#2E7D32"/>
+<text x="464" y="150" font-size="17" font-weight="700" fill="#0F1F3D" text-anchor="start">Bajio Precision Systems</text>
+<text x="464" y="170" font-size="12.5" fill="#6B7280" text-anchor="start">Mexico • Nearshore (USMCA)</text>
+<rect x="464" y="186" width="74" height="26" rx="13" fill="#EAF6EC" stroke="#2E7D32" stroke-width="1.5"/>
+<text x="501.0" y="203.5" font-size="12" font-weight="700" fill="#2E7D32" text-anchor="middle">Green</text>
+<line x1="464" y1="230" x2="768" y2="230" stroke="#EEF0F4" stroke-width="1"/>
+<text x="464" y="280" font-size="46" font-weight="800" fill="#2E7D32" text-anchor="start">11.7</text>
+<text x="464" y="300" font-size="11.5" fill="#6B7280" text-anchor="start">COMPOSITE RISK SCORE (0=best, 100=worst)</text>
+<text x="464" y="334" font-size="12.5" fill="#374151" text-anchor="start">On-Time Delivery</text>
+<text x="768" y="334" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">86.8%</text>
+<text x="464" y="360" font-size="12.5" fill="#374151" text-anchor="start">Avg. Lead Time</text>
+<text x="768" y="360" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">18.1 days (±6.5)</text>
+<text x="464" y="386" font-size="12.5" fill="#374151" text-anchor="start">Tariff Exposure</text>
+<text x="768" y="386" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">0.0%</text>
+<rect x="832" y="110" width="360" height="300" rx="14" fill="#FFFFFF"/>
+<rect x="832" y="110" width="360" height="8" rx="4" fill="#C62828"/>
+<rect x="832" y="114" width="360" height="4" fill="#C62828"/>
+<text x="860" y="150" font-size="17" font-weight="700" fill="#0F1F3D" text-anchor="start">Zhongxin Compute Mfg.</text>
+<text x="860" y="170" font-size="12.5" fill="#6B7280" text-anchor="start">China • Offshore</text>
+<rect x="860" y="186" width="74" height="26" rx="13" fill="#FDECEA" stroke="#C62828" stroke-width="1.5"/>
+<text x="897.0" y="203.5" font-size="12" font-weight="700" fill="#C62828" text-anchor="middle">Red</text>
+<line x1="860" y1="230" x2="1164" y2="230" stroke="#EEF0F4" stroke-width="1"/>
+<text x="860" y="280" font-size="46" font-weight="800" fill="#C62828" text-anchor="start">33.5</text>
+<text x="860" y="300" font-size="11.5" fill="#6B7280" text-anchor="start">COMPOSITE RISK SCORE (0=best, 100=worst)</text>
+<text x="860" y="334" font-size="12.5" fill="#374151" text-anchor="start">On-Time Delivery</text>
+<text x="1164" y="334" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">73.0%</text>
+<text x="860" y="360" font-size="12.5" fill="#374151" text-anchor="start">Avg. Lead Time</text>
+<text x="1164" y="360" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">39.0 days (±15.4)</text>
+<text x="860" y="386" font-size="12.5" fill="#374151" text-anchor="start">Tariff Exposure</text>
+<text x="1164" y="386" font-size="13" font-weight="700" fill="#0F1F3D" text-anchor="end">35.0%</text>
+<text x="40" y="454" font-size="11.5" fill="#7C89A8" text-anchor="start">Built with SQL &#8226; Excel (live tariff-scenario toggle) &#8226; Power BI &#8226; Python automation &#8226; simulated dataset, real July 2026 tariff rates</text>
+</svg>

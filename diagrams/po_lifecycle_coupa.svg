@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1616 310" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1616" height="310" fill="#FAFAFA"/>
+<text x="808.0" y="36" font-size="22" font-weight="700" fill="#1F3864" text-anchor="middle">Coupa Purchase-to-Pay (P2P) Lifecycle</text>
+<text x="808.0" y="58" font-size="13" fill="#595959" text-anchor="middle">Simulated procurement flow for Supplier Risk &amp; Tariff-Impact Scorecard - data fields tracked at each stage</text>
+<line x1="220" y1="155.0" x2="256" y2="155.0" stroke="#8C8C8C" stroke-width="2.5"/>
+<polygon points="256,149.0 266,155.0 256,161.0" fill="#8C8C8C"/>
+<rect x="40" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#1F3864" stroke-width="2"/>
+<rect x="40" y="90" width="180" height="34" rx="10" fill="#1F3864"/>
+<rect x="40" y="107" width="180" height="17" fill="#1F3864"/>
+<circle cx="60" cy="107" r="12" fill="#FFFFFF"/>
+<text x="60" y="112" font-size="13" font-weight="700" fill="#1F3864" text-anchor="middle">1</text>
+<text x="82" y="105" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Purchase</text>
+<text x="82" y="119" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Requisition</text>
+<text x="56" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="56" y="150" font-size="11.5" fill="#404040" text-anchor="start">• Requestor</text>
+<text x="56" y="170" font-size="11.5" fill="#404040" text-anchor="start">• Category</text>
+<text x="56" y="190" font-size="11.5" fill="#404040" text-anchor="start">• Est. Cost</text>
+<line x1="446" y1="155.0" x2="482" y2="155.0" stroke="#8C8C8C" stroke-width="2.5"/>
+<polygon points="482,149.0 492,155.0 482,161.0" fill="#8C8C8C"/>
+<rect x="266" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#2E5395" stroke-width="2"/>
+<rect x="266" y="90" width="180" height="34" rx="10" fill="#2E5395"/>
+<rect x="266" y="107" width="180" height="17" fill="#2E5395"/>
+<circle cx="286" cy="107" r="12" fill="#FFFFFF"/>
+<text x="286" y="112" font-size="13" font-weight="700" fill="#2E5395" text-anchor="middle">2</text>
+<text x="308" y="112" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">PO Creation</text>
+<text x="282" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="282" y="150" font-size="11.5" fill="#404040" text-anchor="start">• PO ID</text>
+<text x="282" y="170" font-size="11.5" fill="#404040" text-anchor="start">• Supplier</text>
+<text x="282" y="190" font-size="11.5" fill="#404040" text-anchor="start">• Incoterm</text>
+<line x1="672" y1="155.0" x2="708" y2="155.0" stroke="#8C8C8C" stroke-width="2.5"/>
+<polygon points="708,149.0 718,155.0 708,161.0" fill="#8C8C8C"/>
+<rect x="492" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#2E5395" stroke-width="2"/>
+<rect x="492" y="90" width="180" height="34" rx="10" fill="#2E5395"/>
+<rect x="492" y="107" width="180" height="17" fill="#2E5395"/>
+<circle cx="512" cy="107" r="12" fill="#FFFFFF"/>
+<text x="512" y="112" font-size="13" font-weight="700" fill="#2E5395" text-anchor="middle">3</text>
+<text x="534" y="105" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Supplier</text>
+<text x="534" y="119" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Acknowledgment</text>
+<text x="508" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="508" y="150" font-size="11.5" fill="#404040" text-anchor="start">• Promised Date</text>
+<text x="508" y="170" font-size="11.5" fill="#404040" text-anchor="start">• HS Code</text>
+<line x1="898" y1="155.0" x2="934" y2="155.0" stroke="#8C8C8C" stroke-width="2.5"/>
+<polygon points="934,149.0 944,155.0 934,161.0" fill="#8C8C8C"/>
+<rect x="718" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#2E5395" stroke-width="2"/>
+<rect x="718" y="90" width="180" height="34" rx="10" fill="#2E5395"/>
+<rect x="718" y="107" width="180" height="17" fill="#2E5395"/>
+<circle cx="738" cy="107" r="12" fill="#FFFFFF"/>
+<text x="738" y="112" font-size="13" font-weight="700" fill="#2E5395" text-anchor="middle">4</text>
+<text x="760" y="112" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Shipment</text>
+<text x="734" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="734" y="150" font-size="11.5" fill="#404040" text-anchor="start">• Freight Mode</text>
+<text x="734" y="170" font-size="11.5" fill="#404040" text-anchor="start">• Customs Clearance</text>
+<line x1="1124" y1="155.0" x2="1160" y2="155.0" stroke="#8C8C8C" stroke-width="2.5"/>
+<polygon points="1160,149.0 1170,155.0 1160,161.0" fill="#8C8C8C"/>
+<rect x="944" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#2E5395" stroke-width="2"/>
+<rect x="944" y="90" width="180" height="34" rx="10" fill="#2E5395"/>
+<rect x="944" y="107" width="180" height="17" fill="#2E5395"/>
+<circle cx="964" cy="107" r="12" fill="#FFFFFF"/>
+<text x="964" y="112" font-size="13" font-weight="700" fill="#2E5395" text-anchor="middle">5</text>
+<text x="986" y="112" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Receipt</text>
+<text x="960" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="960" y="150" font-size="11.5" fill="#404040" text-anchor="start">• Actual Date</text>
+<text x="960" y="170" font-size="11.5" fill="#404040" text-anchor="start">• Defect Flag</text>
+<line x1="1350" y1="155.0" x2="1386" y2="155.0" stroke="#8C8C8C" stroke-width="2.5"/>
+<polygon points="1386,149.0 1396,155.0 1386,161.0" fill="#8C8C8C"/>
+<rect x="1170" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#2E5395" stroke-width="2"/>
+<rect x="1170" y="90" width="180" height="34" rx="10" fill="#2E5395"/>
+<rect x="1170" y="107" width="180" height="17" fill="#2E5395"/>
+<circle cx="1190" cy="107" r="12" fill="#FFFFFF"/>
+<text x="1190" y="112" font-size="13" font-weight="700" fill="#2E5395" text-anchor="middle">6</text>
+<text x="1212" y="112" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Invoice</text>
+<text x="1186" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="1186" y="150" font-size="11.5" fill="#404040" text-anchor="start">• Unit Cost</text>
+<text x="1186" y="170" font-size="11.5" fill="#404040" text-anchor="start">• Duties / Tariff</text>
+<rect x="1396" y="90" width="180" height="130" rx="10" fill="#FFFFFF" stroke="#1F3864" stroke-width="2"/>
+<rect x="1396" y="90" width="180" height="34" rx="10" fill="#1F3864"/>
+<rect x="1396" y="107" width="180" height="17" fill="#1F3864"/>
+<circle cx="1416" cy="107" r="12" fill="#FFFFFF"/>
+<text x="1416" y="112" font-size="13" font-weight="700" fill="#1F3864" text-anchor="middle">7</text>
+<text x="1438" y="112" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start">Payment</text>
+<text x="1412" y="142" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start">DATA CAPTURED</text>
+<text x="1412" y="150" font-size="11.5" fill="#404040" text-anchor="start">• Payment Terms</text>
+<text x="1412" y="170" font-size="11.5" fill="#404040" text-anchor="start">• PO Closed</text>
+<text x="40" y="260" font-size="11" fill="#8C8C8C" text-anchor="start">Documented P2P process flow illustrating procurement data lifecycle tracking.</text>
+<text x="40" y="278" font-size="11" fill="#8C8C8C" text-anchor="start">Fields map directly to columns in Raw_POs, SQL database tables, and Power BI data models.</text>
+</svg>

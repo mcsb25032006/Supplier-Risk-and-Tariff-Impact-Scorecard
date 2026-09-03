@@ -1,0 +1,10 @@
+Country,HS_Code,Product_Category,Base_MFN_Rate,Section_301_Rate,Section_122_Surcharge,USMCA_Qualifying,Base_Effective_Rate
+United States,8471.50,GPU Servers,0.0,0.0,0.0,N/A,0.0
+United States,8517.62,Network Switches,0.0,0.0,0.0,N/A,0.0
+United States,8537.10,PDU / MEP Equipment,0.0,0.0,0.0,N/A,0.0
+Mexico,8471.50,GPU Servers,0.0,0.0,0.0,Y,0.0
+Mexico,8517.62,Network Switches,0.0,0.0,0.0,Y,0.0
+Mexico,8537.10,PDU / MEP Equipment,0.025,0.0,0.0,N,0.025
+China,8471.50,GPU Servers,0.0,0.25,0.1,N/A,0.35
+China,8517.62,Network Switches,0.0,0.25,0.1,N/A,0.35
+China,8537.10,PDU / MEP Equipment,0.0,0.25,0.1,N/A,0.35

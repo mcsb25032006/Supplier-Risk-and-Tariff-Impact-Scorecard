@@ -1,0 +1,17 @@
+Defect_ID,PO_ID,Supplier_ID,Defect_Type,Defect_Qty,Detected_Date,Resolution
+DEF-0001,PO-1095,SUP-001,Packaging Damage,1,2025-02-19,Returned
+DEF-0002,PO-1242,SUP-001,Packaging Damage,1,2025-04-22,Returned
+DEF-0003,PO-1001,SUP-002,Cosmetic Damage,3,2025-04-28,Returned
+DEF-0004,PO-1057,SUP-001,Packaging Damage,3,2025-07-09,Replaced
+DEF-0005,PO-1329,SUP-003,Cosmetic Damage,1,2025-07-23,Pending
+DEF-0006,PO-1017,SUP-003,Packaging Damage,1,2025-09-28,Replaced
+DEF-0007,PO-1086,SUP-003,Functional Failure,1,2025-09-27,Pending
+DEF-0008,PO-1214,SUP-002,Wrong Item Shipped,6,2025-09-27,Returned
+DEF-0009,PO-1195,SUP-001,Functional Failure,1,2025-12-21,Replaced
+DEF-0010,PO-1089,SUP-003,Wrong Item Shipped,2,2026-04-19,Pending
+DEF-0011,PO-1240,SUP-002,Wrong Item Shipped,1,2026-02-26,Replaced
+DEF-0012,PO-1076,SUP-001,Functional Failure,1,2026-04-03,Replaced
+DEF-0013,PO-1081,SUP-002,Packaging Damage,1,2026-05-09,Replaced
+DEF-0014,PO-1147,SUP-003,Functional Failure,2,2026-05-31,Returned
+DEF-0015,PO-1141,SUP-003,Wrong Item Shipped,1,2026-06-16,Pending
+DEF-0016,PO-1318,SUP-002,DOA - Dead on Arrival,3,2026-06-12,Credited

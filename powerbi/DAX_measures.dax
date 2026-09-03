@@ -1,0 +1,140 @@
+// =============================================================================
+// Power BI DAX Measures: Supplier Risk & Tariff-Impact Scorecard
+// Organized by Dashboard Page / View
+// =============================================================================
+
+// =============================================================================
+// 1. EXECUTIVE OVERVIEW MEASURES
+// =============================================================================
+
+// Delivered Purchase Orders count (excludes open / in-transit orders)
+Delivered POs = 
+CALCULATE(
+    COUNTROWS('powerbi_ready_export'),
+    'powerbi_ready_export'[PO_Status] = "Delivered"
+)
+
+// Total Base Spend ($ USD) across delivered orders
+Total Base Spend = 
+CALCULATE(
+    SUM('powerbi_ready_export'[Base_Spend_USD]),
+    'powerbi_ready_export'[PO_Status] = "Delivered"
+)
+
+// Total Landed Spend ($ USD) including tariffs
+Total Landed Spend = 
+CALCULATE(
+    SUM('powerbi_ready_export'[Landed_Spend_USD]),
+    'powerbi_ready_export'[PO_Status] = "Delivered"
+)
+
+// Total Tariff Dollars ($ USD)
+Total Tariff Exposure USD = 
+[Total Landed Spend] - [Total Base Spend]
+
+// Portfolio Tariff Exposure Percentage
+Tariff Exposure % = 
+DIVIDE([Total Tariff Exposure USD], [Total Base Spend], 0)
+
+// On-Time Delivery Rate (%)
+On-Time Rate = 
+DIVIDE(
+    CALCULATE(
+        SUM('powerbi_ready_export'[On_Time_Flag]),
+        'powerbi_ready_export'[PO_Status] = "Delivered"
+    ),
+    [Delivered POs],
+    0
+)
+
+// Defect Rate (%)
+Defect Rate = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS('powerbi_ready_export'),
+        'powerbi_ready_export'[Defect_Flag] = "Y",
+        'powerbi_ready_export'[PO_Status] = "Delivered"
+    ),
+    [Delivered POs],
+    0
+)
+
+
+// =============================================================================
+// 2. SUPPLIER RISK & LEAD-TIME VOLATILITY MEASURES
+// =============================================================================
+
+// Average Lead Time in Days
+Avg Lead Time (Days) = 
+CALCULATE(
+    AVERAGE('powerbi_ready_export'[Lead_Time_Days]),
+    'powerbi_ready_export'[PO_Status] = "Delivered"
+)
+
+// Lead Time Volatility: Population Standard Deviation (ddof=0)
+Lead Time StDev (Days) = 
+CALCULATE(
+    STDEVX.P('powerbi_ready_export', 'powerbi_ready_export'[Lead_Time_Days]),
+    'powerbi_ready_export'[PO_Status] = "Delivered"
+)
+
+// Average Customs Clearance Duration in Days
+Avg Customs Clearance Days = 
+CALCULATE(
+    AVERAGE('powerbi_ready_export'[Customs_Clearance_Days]),
+    'powerbi_ready_export'[PO_Status] = "Delivered"
+)
+
+// Composite Supplier Risk Score (0-100 scale, lower is better)
+// Formula: 30% On-Time + 20% Lead Time Volatility + 25% Tariff Exposure + 25% Quality
+Composite Risk Score = 
+ROUND(
+    0.30 * (1 - [On-Time Rate]) * 100
+    + 0.20 * MIN([Lead Time StDev (Days)] / 20 * 100, 100)
+    + 0.25 * [Tariff Exposure %] * 100
+    + 0.25 * [Defect Rate] * 100,
+    1
+)
+
+// RAG Status Category (Green < 15, Yellow 15-29.9, Red >= 30)
+RAG Status = 
+SWITCH(
+    TRUE(),
+    ISBLANK([Composite Risk Score]), BLANK(),
+    [Composite Risk Score] >= 30, "Red",
+    [Composite Risk Score] >= 15, "Yellow",
+    "Green"
+)
+
+
+// =============================================================================
+// 3. TARIFF SCENARIO SIMULATION MEASURES
+// =============================================================================
+
+// Dynamic scenario adjustment value retrieved from disconnected Scenario parameter table
+Scenario Selected Adjustment = 
+SELECTEDVALUE('Tariff_Scenarios'[Adjustment_Value], 0)
+
+// Dynamic scenario tariff rate calculation
+Scenario New Tariff Rate = 
+IF(
+    SELECTEDVALUE('powerbi_ready_export'[Country]) = "United States",
+    0,
+    IF(
+        SELECTEDVALUE('Tariff_Scenarios'[Adjustment_Type]) = "Additive",
+        MAX(0, [Tariff Exposure %] + [Scenario Selected Adjustment]),
+        [Scenario Selected Adjustment]
+    )
+)
+
+// Scenario Landed Spend
+Scenario Landed Spend = 
+[Total Base Spend] * (1 + [Scenario New Tariff Rate])
+
+// Scenario Financial Delta vs Baseline Landed Spend
+Scenario Delta vs Baseline Spend = 
+[Scenario Landed Spend] - [Total Landed Spend]
+
+// Scenario Percentage Variance
+Scenario Spend Delta % = 
+DIVIDE([Scenario Delta vs Baseline Spend], [Total Landed Spend], 0)
